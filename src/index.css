@@ -1,0 +1,4 @@
+/* Ajout d'un espace pour le contenu principal sous la navbar */
+main {
+  padding-top: 80px; /* Correspond à la hauteur de la navbar */
+}

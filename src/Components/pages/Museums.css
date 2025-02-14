@@ -1,0 +1,234 @@
+.museums-container {
+    padding: 100px 2rem 3rem;
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+.museums-header {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.museums-header h1 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.museums-intro {
+    color: #4a5568;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.museums-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    background: white;
+    color: #4a5568;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn.active {
+    background: #805ad5;
+    color: white;
+}
+
+.museums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.museum-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.museum-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.museum-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.museum-price {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.museum-content {
+    padding: 1.5rem;
+}
+
+.museum-content h3 {
+    font-size: 1.25rem;
+    color: #2d3748;
+    margin: 0 0 0.5rem;
+}
+
+.museum-location {
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.museum-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.rating-score {
+    color: #f6ad55;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.category-tag {
+    background: #faf5ff;
+    color: #805ad5;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+.museum-description {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.museum-highlights {
+    margin-bottom: 1.5rem;
+}
+
+.museum-highlights h4 {
+    color: #2d3748;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.highlights-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.highlight-tag {
+    background: #f7fafc;
+    color: #4a5568;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    border: 1px solid #e2e8f0;
+}
+
+.museum-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.open-hours {
+    color: #718096;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.visit-btn {
+    padding: 0.5rem 1rem;
+    background: #805ad5;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.visit-btn:hover {
+    background: #6b46c1;
+}
+
+@media (max-width: 768px) {
+    .museums-container {
+        padding: 100px 1rem 2rem;
+    }
+
+    .museums-header h1 {
+        font-size: 2rem;
+    }
+
+    .museums-filters {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        margin: 0 -1rem 2rem;
+        padding: 0 1rem 1rem;
+    }
+
+    .filter-btn {
+        white-space: nowrap;
+    }
+
+    .museums-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .museum-image {
+        height: 180px;
+    }
+}
